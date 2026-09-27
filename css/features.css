@@ -1,0 +1,37 @@
+.features {
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.features-item {
+  width: 264px;
+}
+.features-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.features-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 100%;
+  height: 112px;
+  background-color: #f4f4fd;
+}
+.features-icon {
+}
+.features-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+.features-desc {
+}
