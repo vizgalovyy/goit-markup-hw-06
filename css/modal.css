@@ -26,10 +26,9 @@
   transform: translateX(-50%) translateY(-70%);
   opacity: 0;
 
-  max-width: 408px;
+  max-width: 288px;
   width: 100%;
-  min-height: 582px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow:
@@ -86,8 +85,6 @@
 }
 
 /* Modal form */
-.modal-form {
-}
 .modal-form-field {
   margin-bottom: 8px;
 }
@@ -162,20 +159,26 @@
   margin-bottom: 24px;
 }
 .modal-form-policy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+
   font-size: 12px;
   letter-spacing: 0.04em;
   line-height: 1.17;
   color: #8e8f99;
 }
 .modal-form-checkbox {
+  flex-shrink: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
-  margin-right: 8px;
   border-radius: 2px;
   border: 0.88px solid rgba(46, 47, 66, 0.4);
   transition: 300ms ease-out;
@@ -232,4 +235,17 @@
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: #404bbf;
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+    min-height: 582px;
+    padding: 72px 24px 24px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
 }

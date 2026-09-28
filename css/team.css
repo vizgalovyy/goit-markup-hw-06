@@ -6,17 +6,20 @@
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 72px;
 }
 .team-item {
+  width: 264px;
+
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-.team-ill {
 }
 
 .team-name {
@@ -57,4 +60,25 @@
 }
 .socials-icon {
   color: #f4f4fd;
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .team-list {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 64px 24px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
 }
