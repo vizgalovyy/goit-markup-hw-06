@@ -36,11 +36,8 @@ address {
 }
 img {
   display: block;
-}
-
-/* Helper class*/
-.hide {
-  display: none !important;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Base styles*/
@@ -70,9 +67,6 @@ img {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 .logo {
   display: inline-flex;
