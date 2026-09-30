@@ -4,7 +4,7 @@
   left: 0;
   transform: translateX(100%);
 
-  max-width: 320px;
+  max-width: 100%;
   height: 100%;
 
   background-color: #fff;
@@ -27,7 +27,7 @@
   flex-direction: column;
 
   padding: 72px 16px 40px;
-  width: !00%;
+  width: 100%;
   height: 100%;
 }
 
@@ -97,12 +97,14 @@
 }
 .contacts-item {
   display: flex;
-  gap: 48px;
+  flex-direction: column;
+  gap: 24px;
 }
 .contacts-link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  color: #434455;
 }
 .contacts-link.active {
   color: #4d5ae5;
@@ -120,4 +122,10 @@
 .mobile-menu .socials-link:hover,
 .mobile-menu .socials-link:focus {
   background-color: #31d0aa;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
