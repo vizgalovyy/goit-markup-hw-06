@@ -33,7 +33,6 @@
   gap: 16px;
 }
 .socials-caption {
-  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -131,7 +130,9 @@
   }
   .left {
     max-width: 264px;
-    margin-right: 24px;
+    align-items: flex-start;
+  }
+  .center {
     align-items: flex-start;
   }
   .right {
@@ -156,13 +157,12 @@
   }
   .footer .container {
     padding: 0 15px;
+    gap: 0;
   }
   .left {
     margin-right: 120px;
   }
-  .center {
-    margin-bottom: 32px;
-  }
+
   .right {
     margin-left: auto;
   }

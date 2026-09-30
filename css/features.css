@@ -18,11 +18,13 @@
   display: none;
 }
 .features-subtitle {
+  width: 100%;
   margin: 0 auto 8px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   color: #2e2f42;
 }
 .features-desc {
@@ -44,6 +46,7 @@
   }
   .features-subtitle {
     margin: 0 0 8px;
+    text-align: start;
   }
   .features-desc {
     width: 356px;
@@ -85,5 +88,7 @@
   }
   .features-desc {
     width: 264px;
+
+    font-weight: 400;
   }
 }
